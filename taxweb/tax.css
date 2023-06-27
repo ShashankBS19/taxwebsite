@@ -1,0 +1,229 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+
+}
+
+/*nav body*/
+.omg{
+    margin-left:0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 0;
+    transition: 0.5s;
+    
+}
+
+.omg:hover{
+    color: rgb(13, 199, 220);
+
+}
+
+
+nav{
+    background-color: rgb(247, 234, 234);
+    padding: 10px;
+    position: inherit;
+    display: flexbox;
+    border:  5px solid white;
+    border-radius: 9px;
+   
+    
+    
+}
+
+ul{
+    list-style-type: none ;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+     margin: 0 20px;
+    
+    
+}
+
+
+
+/*nav Services */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 234, 234);
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-arrow {
+    position: relative;
+}
+
+.dropdown-arrow::after {
+    content: "\25BC";
+    display: inline-block;
+    margin-left: 5px;
+    color: #0a0a0a;
+    
+}
+
+.dropdown-content-ser {
+    display: inline-block;
+    padding: 8px 12px;
+    color: rgb(4, 4, 4);
+    /*background-color: yellow*/
+    
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.dropdown-content-ser:hover {
+    color: rgb(42, 153, 208);
+    /*
+    background-color: rgb(244, 247, 246);*/
+    
+}
+
+
+/*nav login-sign up buttons */
+
+button {
+    --primary-color: rgb(14, 128, 96);
+    --secondary-color: #fff;
+    --hover-color: #e91919;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: black;
+    padding: 1em 1.8em;
+    background: rgb(255, 255, 255);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: rgb(254, 255, 255);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid black;
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: rgb(231, 185, 185);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
+
+/*home section*/
+.homi{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 140px;
+}
+
+.first{
+    text-align: center;
+    align-items:center;
+    margin: 0;
+    background-image: url() ;
+
+}
+
+.first h3{
+    color: rgb(88, 86, 86);
+    font-size: 25px;
+}
+
+.first h1{
+    font-family: poppins,Sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.first a{
+    color: red;
+}
+
+.first h2{
+    font-size: 30px;
+}
+
+
+footer{
+   
+    color: rgb(27, 25, 25);
+    padding: 10px;
+    background-color: rgb(141, 137, 137);
+    
+}
+.fot{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+.fot a {
+    color: black;
+}
